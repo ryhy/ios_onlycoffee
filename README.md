@@ -1,2 +1,3 @@
-# oc
-# iosTest_socialApp
+#OnlyCoffee
+
+コーヒーの口コミアプリのプロトタイプを作成。
