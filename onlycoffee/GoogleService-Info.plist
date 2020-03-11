@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>865249328731-4ueda1045rd7jc5s6q3avo7n8bkj0fts.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.865249328731-4ueda1045rd7jc5s6q3avo7n8bkj0fts</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAe3R3CC4IqbHgmfzvD9GOPoM7dvdeICno</string>
+	<key>GCM_SENDER_ID</key>
+	<string>865249328731</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ryohei.onlycoffee</string>
+	<key>PROJECT_ID</key>
+	<string>onlycoffee-1e70d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>onlycoffee-1e70d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:865249328731:ios:06c9be0518f79dc7</string>
+	<key>DATABASE_URL</key>
+	<string>https://onlycoffee-1e70d.firebaseio.com</string>
+</dict>
+</plist>

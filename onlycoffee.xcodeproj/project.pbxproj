@@ -1,0 +1,1031 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F877764225B503600BAF598 /* PageTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F877763225B503600BAF598 /* PageTable.swift */; };
+		0F877766225B505E00BAF598 /* SecurityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F877765225B505E00BAF598 /* SecurityAPI.swift */; };
+		0F877768225B507700BAF598 /* TESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F877767225B507700BAF598 /* TESTAPI.swift */; };
+		0F87776A225B5B5F00BAF598 /* PageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F877769225B5B5F00BAF598 /* PageCollection.swift */; };
+		0FAFB6EC2255E54C003ED3A2 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAFB6EB2255E54A003ED3A2 /* menu.png */; };
+		0FAFB6EE2255E5A8003ED3A2 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAFB6ED2255E5A8003ED3A2 /* EditProfileViewController.swift */; };
+		0FAFB6F02255ECC3003ED3A2 /* RelationshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAFB6EF2255ECC3003ED3A2 /* RelationshipViewController.swift */; };
+		0FB96FC3225732DC00F4C6E2 /* i.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB96FC2225732DC00F4C6E2 /* i.swift */; };
+		0FB96FC5225AEA2D00F4C6E2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB96FC4225AEA2D00F4C6E2 /* Alert.swift */; };
+		10CCCCA6CE2C1C9520D0B745 /* Pods_onlycoffeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AC35EE4F68236F1E0BE5EB /* Pods_onlycoffeeTests.framework */; };
+		26400AB3225A43C100F9EF59 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26400AB2225A43C100F9EF59 /* DB.swift */; };
+		26839A98225225A2002F8040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839A97225225A2002F8040 /* AppDelegate.swift */; };
+		26839A9A225225A2002F8040 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839A99225225A2002F8040 /* MainViewController.swift */; };
+		26839A9D225225A2002F8040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26839A9B225225A2002F8040 /* Main.storyboard */; };
+		26839AA0225225A2002F8040 /* onlycoffee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26839A9E225225A2002F8040 /* onlycoffee.xcdatamodeld */; };
+		26839AA2225225A8002F8040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26839AA1225225A8002F8040 /* Assets.xcassets */; };
+		26839AA5225225A8002F8040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26839AA3225225A8002F8040 /* LaunchScreen.storyboard */; };
+		26839AB0225225A9002F8040 /* onlycoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AAF225225A9002F8040 /* onlycoffeeTests.swift */; };
+		26839ABB225225A9002F8040 /* onlycoffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839ABA225225A9002F8040 /* onlycoffeeUITests.swift */; };
+		26839ACF22527D10002F8040 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839ACE22527D10002F8040 /* constant.swift */; };
+		26839AD122527DA5002F8040 /* CoffeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AD022527DA5002F8040 /* CoffeeAPI.swift */; };
+		26839AD422527DE2002F8040 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AD322527DE2002F8040 /* AuthManager.swift */; };
+		26839AD622527EC4002F8040 /* CoffeePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AD522527EC4002F8040 /* CoffeePost.swift */; };
+		26839AD822527F06002F8040 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AD722527F06002F8040 /* Profile.swift */; };
+		26839ADA2254648C002F8040 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26839AD92254648C002F8040 /* GoogleService-Info.plist */; };
+		26839ADD225465B1002F8040 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839ADB225465B1002F8040 /* FeedTableViewCell.swift */; };
+		26839ADE225465B1002F8040 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839ADC225465B1002F8040 /* FeedTableViewCell.xib */; };
+		26839AE022546AD5002F8040 /* coffee_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26839ADF22546AD5002F8040 /* coffee_1.jpg */; };
+		26839AE222546BDA002F8040 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AE122546BDA002F8040 /* ShadowButton.swift */; };
+		26839AE422546CD9002F8040 /* person_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26839AE322546CD8002F8040 /* person_1.jpg */; };
+		26839AE622546D16002F8040 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AE522546D16002F8040 /* Extension.swift */; };
+		26839AE8225472CE002F8040 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AE7225472CE002F8040 /* ReviewViewController.swift */; };
+		26839AEF225476D5002F8040 /* CoffeeImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AED225476D5002F8040 /* CoffeeImageTableViewCell.swift */; };
+		26839AF0225476D5002F8040 /* CoffeeImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839AEE225476D5002F8040 /* CoffeeImageTableViewCell.xib */; };
+		26839AF3225476E7002F8040 /* CoffeeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AF1225476E7002F8040 /* CoffeeInfoTableViewCell.swift */; };
+		26839AF4225476E7002F8040 /* CoffeeInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839AF2225476E7002F8040 /* CoffeeInfoTableViewCell.xib */; };
+		26839AF72254773D002F8040 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AF52254773D002F8040 /* CommentTableViewCell.swift */; };
+		26839AF82254773D002F8040 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839AF62254773D002F8040 /* CommentTableViewCell.xib */; };
+		26839AFB22547747002F8040 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AF922547747002F8040 /* RatingTableViewCell.swift */; };
+		26839AFC22547747002F8040 /* RatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839AFA22547747002F8040 /* RatingTableViewCell.xib */; };
+		26839AFE22547A9A002F8040 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 26839AFD22547A99002F8040 /* like.png */; };
+		26839B00225481D7002F8040 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839AFF225481D7002F8040 /* ProfileViewController.swift */; };
+		26839B02225481EE002F8040 /* PhotoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B01225481EE002F8040 /* PhotoSelectViewController.swift */; };
+		26839B0422548205002F8040 /* PostReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B0322548205002F8040 /* PostReviewViewController.swift */; };
+		26839B0622548217002F8040 /* CategorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B0522548217002F8040 /* CategorySearchViewController.swift */; };
+		26839B082254823A002F8040 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B072254823A002F8040 /* SearchResultViewController.swift */; };
+		26839B0B225487B9002F8040 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B09225487B9002F8040 /* CategoryCollectionViewCell.swift */; };
+		26839B0C225487B9002F8040 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839B0A225487B9002F8040 /* CategoryCollectionViewCell.xib */; };
+		26839B0F22548BC3002F8040 /* SearchResultsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B0D22548BC3002F8040 /* SearchResultsCollectionViewCell.swift */; };
+		26839B1022548BC3002F8040 /* SearchResultsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839B0E22548BC3002F8040 /* SearchResultsCollectionViewCell.xib */; };
+		26839B1222548C7B002F8040 /* coffee_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26839B1122548C7A002F8040 /* coffee_2.jpg */; };
+		26839B14225497DC002F8040 /* coffee_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26839B13225497DC002F8040 /* coffee_3.jpg */; };
+		26839B1622549801002F8040 /* coffee_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26839B1522549801002F8040 /* coffee_4.jpg */; };
+		26839B182254A82D002F8040 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 26839B172254A82D002F8040 /* star.png */; };
+		26839B1A2254A8DE002F8040 /* nolike.png in Resources */ = {isa = PBXBuildFile; fileRef = 26839B192254A8DE002F8040 /* nolike.png */; };
+		26839B1D2254C3C7002F8040 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26839B1B2254C3C7002F8040 /* ProfileCollectionViewCell.swift */; };
+		26839B1E2254C3C7002F8040 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26839B1C2254C3C7002F8040 /* ProfileCollectionViewCell.xib */; };
+		26F3CF262254DE7D00DCFCCF /* YPPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3CF252254DE7D00DCFCCF /* YPPicker.swift */; };
+		26F3CF292254FFEB00DCFCCF /* CommentFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3CF272254FFEB00DCFCCF /* CommentFieldTableViewCell.swift */; };
+		26F3CF2A2254FFEB00DCFCCF /* CommentFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F3CF282254FFEB00DCFCCF /* CommentFieldTableViewCell.xib */; };
+		3EB7052415DD89259FB4BC21 /* Pods_onlycoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337C78BDAC4B79E1D877A414 /* Pods_onlycoffee.framework */; };
+		F696851B9E5EADB95122DF92 /* Pods_onlycoffeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D920E0B840C21FD19851501C /* Pods_onlycoffeeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26839AAC225225A9002F8040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26839A8C225225A2002F8040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26839A93225225A2002F8040;
+			remoteInfo = onlycoffee;
+		};
+		26839AB7225225A9002F8040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26839A8C225225A2002F8040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26839A93225225A2002F8040;
+			remoteInfo = onlycoffee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B59E7F87B14C043F1A16AE /* Pods-onlycoffeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlycoffeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-onlycoffeeUITests/Pods-onlycoffeeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F877763225B503600BAF598 /* PageTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTable.swift; sourceTree = "<group>"; };
+		0F877765225B505E00BAF598 /* SecurityAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAPI.swift; sourceTree = "<group>"; };
+		0F877767225B507700BAF598 /* TESTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTAPI.swift; sourceTree = "<group>"; };
+		0F877769225B5B5F00BAF598 /* PageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollection.swift; sourceTree = "<group>"; };
+		0FAFB6EB2255E54A003ED3A2 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		0FAFB6ED2255E5A8003ED3A2 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		0FAFB6EF2255ECC3003ED3A2 /* RelationshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipViewController.swift; sourceTree = "<group>"; };
+		0FB96FC2225732DC00F4C6E2 /* i.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i.swift; sourceTree = "<group>"; };
+		0FB96FC4225AEA2D00F4C6E2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		26400AB2225A43C100F9EF59 /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		26839A94225225A2002F8040 /* onlycoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onlycoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26839A97225225A2002F8040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26839A99225225A2002F8040 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		26839A9C225225A2002F8040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26839A9F225225A2002F8040 /* onlycoffee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = onlycoffee.xcdatamodel; sourceTree = "<group>"; };
+		26839AA1225225A8002F8040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26839AA4225225A8002F8040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26839AA6225225A8002F8040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26839AAB225225A9002F8040 /* onlycoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onlycoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26839AAF225225A9002F8040 /* onlycoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlycoffeeTests.swift; sourceTree = "<group>"; };
+		26839AB1225225A9002F8040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26839AB6225225A9002F8040 /* onlycoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onlycoffeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26839ABA225225A9002F8040 /* onlycoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlycoffeeUITests.swift; sourceTree = "<group>"; };
+		26839ABC225225A9002F8040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26839ACE22527D10002F8040 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		26839AD022527DA5002F8040 /* CoffeeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAPI.swift; sourceTree = "<group>"; };
+		26839AD322527DE2002F8040 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		26839AD522527EC4002F8040 /* CoffeePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePost.swift; sourceTree = "<group>"; };
+		26839AD722527F06002F8040 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		26839AD92254648C002F8040 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26839ADB225465B1002F8040 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		26839ADC225465B1002F8040 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		26839ADF22546AD5002F8040 /* coffee_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee_1.jpg; sourceTree = "<group>"; };
+		26839AE122546BDA002F8040 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		26839AE322546CD8002F8040 /* person_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person_1.jpg; sourceTree = "<group>"; };
+		26839AE522546D16002F8040 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		26839AE7225472CE002F8040 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		26839AED225476D5002F8040 /* CoffeeImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeImageTableViewCell.swift; sourceTree = "<group>"; };
+		26839AEE225476D5002F8040 /* CoffeeImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeImageTableViewCell.xib; sourceTree = "<group>"; };
+		26839AF1225476E7002F8040 /* CoffeeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		26839AF2225476E7002F8040 /* CoffeeInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeInfoTableViewCell.xib; sourceTree = "<group>"; };
+		26839AF52254773D002F8040 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		26839AF62254773D002F8040 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		26839AF922547747002F8040 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		26839AFA22547747002F8040 /* RatingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingTableViewCell.xib; sourceTree = "<group>"; };
+		26839AFD22547A99002F8040 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		26839AFF225481D7002F8040 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		26839B01225481EE002F8040 /* PhotoSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectViewController.swift; sourceTree = "<group>"; };
+		26839B0322548205002F8040 /* PostReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewViewController.swift; sourceTree = "<group>"; };
+		26839B0522548217002F8040 /* CategorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySearchViewController.swift; sourceTree = "<group>"; };
+		26839B072254823A002F8040 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		26839B09225487B9002F8040 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		26839B0A225487B9002F8040 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		26839B0D22548BC3002F8040 /* SearchResultsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCollectionViewCell.swift; sourceTree = "<group>"; };
+		26839B0E22548BC3002F8040 /* SearchResultsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsCollectionViewCell.xib; sourceTree = "<group>"; };
+		26839B1122548C7A002F8040 /* coffee_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee_2.jpg; sourceTree = "<group>"; };
+		26839B13225497DC002F8040 /* coffee_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee_3.jpg; sourceTree = "<group>"; };
+		26839B1522549801002F8040 /* coffee_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee_4.jpg; sourceTree = "<group>"; };
+		26839B172254A82D002F8040 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		26839B192254A8DE002F8040 /* nolike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nolike.png; sourceTree = "<group>"; };
+		26839B1B2254C3C7002F8040 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		26839B1C2254C3C7002F8040 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		26F3CF252254DE7D00DCFCCF /* YPPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPPicker.swift; sourceTree = "<group>"; };
+		26F3CF272254FFEB00DCFCCF /* CommentFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentFieldTableViewCell.swift; sourceTree = "<group>"; };
+		26F3CF282254FFEB00DCFCCF /* CommentFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentFieldTableViewCell.xib; sourceTree = "<group>"; };
+		337C78BDAC4B79E1D877A414 /* Pods_onlycoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlycoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A2BCDD45539A84D0C53639 /* Pods-onlycoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlycoffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-onlycoffee/Pods-onlycoffee.release.xcconfig"; sourceTree = "<group>"; };
+		43AC35EE4F68236F1E0BE5EB /* Pods_onlycoffeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlycoffeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E45617FE2B5A3D4AD6414F /* Pods-onlycoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlycoffee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onlycoffee/Pods-onlycoffee.debug.xcconfig"; sourceTree = "<group>"; };
+		BC908E4AD9AB1B5324E30450 /* Pods-onlycoffeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlycoffeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-onlycoffeeTests/Pods-onlycoffeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D920E0B840C21FD19851501C /* Pods_onlycoffeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onlycoffeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6962E332D27020FEDB4C0E8 /* Pods-onlycoffeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlycoffeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onlycoffeeTests/Pods-onlycoffeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7447A2E8C6C81028E3DB990 /* Pods-onlycoffeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onlycoffeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onlycoffeeUITests/Pods-onlycoffeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26839A91225225A2002F8040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB7052415DD89259FB4BC21 /* Pods_onlycoffee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26839AA8225225A9002F8040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CCCCA6CE2C1C9520D0B745 /* Pods_onlycoffeeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26839AB3225225A9002F8040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F696851B9E5EADB95122DF92 /* Pods_onlycoffeeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26839A8B225225A2002F8040 = {
+			isa = PBXGroup;
+			children = (
+				26839A96225225A2002F8040 /* onlycoffee */,
+				26839AAE225225A9002F8040 /* onlycoffeeTests */,
+				26839AB9225225A9002F8040 /* onlycoffeeUITests */,
+				26839A95225225A2002F8040 /* Products */,
+				59F9C1324708A2E3CC34CC01 /* Pods */,
+				5D4416504D04E51BC7BC526D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26839A95225225A2002F8040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26839A94225225A2002F8040 /* onlycoffee.app */,
+				26839AAB225225A9002F8040 /* onlycoffeeTests.xctest */,
+				26839AB6225225A9002F8040 /* onlycoffeeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26839A96225225A2002F8040 /* onlycoffee */ = {
+			isa = PBXGroup;
+			children = (
+				26839A97225225A2002F8040 /* AppDelegate.swift */,
+				26839AE122546BDA002F8040 /* ShadowButton.swift */,
+				26839AD222527DAA002F8040 /* API */,
+				26839ACD22527D05002F8040 /* Constant */,
+				26839ACC22527CD8002F8040 /* Extension */,
+				26839ACB22527CCD002F8040 /* Utils */,
+				26839ACA22527CC8002F8040 /* View */,
+				26839AC922527CC1002F8040 /* Model */,
+				26839AC822527CAE002F8040 /* ViewController */,
+				26839A9B225225A2002F8040 /* Main.storyboard */,
+				26839AA3225225A8002F8040 /* LaunchScreen.storyboard */,
+				26839AA1225225A8002F8040 /* Assets.xcassets */,
+				26839AA6225225A8002F8040 /* Info.plist */,
+				26839A9E225225A2002F8040 /* onlycoffee.xcdatamodeld */,
+				26839AD92254648C002F8040 /* GoogleService-Info.plist */,
+				26839ADF22546AD5002F8040 /* coffee_1.jpg */,
+				26839B1122548C7A002F8040 /* coffee_2.jpg */,
+				26839B13225497DC002F8040 /* coffee_3.jpg */,
+				26839B1522549801002F8040 /* coffee_4.jpg */,
+				26839AE322546CD8002F8040 /* person_1.jpg */,
+				26839AFD22547A99002F8040 /* like.png */,
+				26839B192254A8DE002F8040 /* nolike.png */,
+				26839B172254A82D002F8040 /* star.png */,
+				0FAFB6EB2255E54A003ED3A2 /* menu.png */,
+			);
+			path = onlycoffee;
+			sourceTree = "<group>";
+		};
+		26839AAE225225A9002F8040 /* onlycoffeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				26839AAF225225A9002F8040 /* onlycoffeeTests.swift */,
+				26839AB1225225A9002F8040 /* Info.plist */,
+			);
+			path = onlycoffeeTests;
+			sourceTree = "<group>";
+		};
+		26839AB9225225A9002F8040 /* onlycoffeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26839ABA225225A9002F8040 /* onlycoffeeUITests.swift */,
+				26839ABC225225A9002F8040 /* Info.plist */,
+			);
+			path = onlycoffeeUITests;
+			sourceTree = "<group>";
+		};
+		26839AC822527CAE002F8040 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				26839A99225225A2002F8040 /* MainViewController.swift */,
+				26839ADB225465B1002F8040 /* FeedTableViewCell.swift */,
+				26839ADC225465B1002F8040 /* FeedTableViewCell.xib */,
+				26839AE7225472CE002F8040 /* ReviewViewController.swift */,
+				26839AED225476D5002F8040 /* CoffeeImageTableViewCell.swift */,
+				26839AEE225476D5002F8040 /* CoffeeImageTableViewCell.xib */,
+				26839AF1225476E7002F8040 /* CoffeeInfoTableViewCell.swift */,
+				26839AF2225476E7002F8040 /* CoffeeInfoTableViewCell.xib */,
+				26839AF922547747002F8040 /* RatingTableViewCell.swift */,
+				26839AFA22547747002F8040 /* RatingTableViewCell.xib */,
+				26839AF52254773D002F8040 /* CommentTableViewCell.swift */,
+				26839AF62254773D002F8040 /* CommentTableViewCell.xib */,
+				26F3CF272254FFEB00DCFCCF /* CommentFieldTableViewCell.swift */,
+				26F3CF282254FFEB00DCFCCF /* CommentFieldTableViewCell.xib */,
+				26839AFF225481D7002F8040 /* ProfileViewController.swift */,
+				26839B01225481EE002F8040 /* PhotoSelectViewController.swift */,
+				26839B0322548205002F8040 /* PostReviewViewController.swift */,
+				26839B0522548217002F8040 /* CategorySearchViewController.swift */,
+				26839B09225487B9002F8040 /* CategoryCollectionViewCell.swift */,
+				26839B0A225487B9002F8040 /* CategoryCollectionViewCell.xib */,
+				26839B072254823A002F8040 /* SearchResultViewController.swift */,
+				26839B0D22548BC3002F8040 /* SearchResultsCollectionViewCell.swift */,
+				26839B0E22548BC3002F8040 /* SearchResultsCollectionViewCell.xib */,
+				26839B1B2254C3C7002F8040 /* ProfileCollectionViewCell.swift */,
+				26839B1C2254C3C7002F8040 /* ProfileCollectionViewCell.xib */,
+				0FAFB6ED2255E5A8003ED3A2 /* EditProfileViewController.swift */,
+				0FAFB6EF2255ECC3003ED3A2 /* RelationshipViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		26839AC922527CC1002F8040 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26839AD522527EC4002F8040 /* CoffeePost.swift */,
+				26839AD722527F06002F8040 /* Profile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		26839ACA22527CC8002F8040 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		26839ACB22527CCD002F8040 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				26F3CF252254DE7D00DCFCCF /* YPPicker.swift */,
+				0FB96FC2225732DC00F4C6E2 /* i.swift */,
+				0FB96FC4225AEA2D00F4C6E2 /* Alert.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		26839ACC22527CD8002F8040 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26839AE522546D16002F8040 /* Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		26839ACD22527D05002F8040 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				26839ACE22527D10002F8040 /* constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		26839AD222527DAA002F8040 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				26400AB2225A43C100F9EF59 /* DB.swift */,
+				26839AD322527DE2002F8040 /* AuthManager.swift */,
+				26839AD022527DA5002F8040 /* CoffeeAPI.swift */,
+				0F877763225B503600BAF598 /* PageTable.swift */,
+				0F877769225B5B5F00BAF598 /* PageCollection.swift */,
+				0F877765225B505E00BAF598 /* SecurityAPI.swift */,
+				0F877767225B507700BAF598 /* TESTAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		59F9C1324708A2E3CC34CC01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76E45617FE2B5A3D4AD6414F /* Pods-onlycoffee.debug.xcconfig */,
+				39A2BCDD45539A84D0C53639 /* Pods-onlycoffee.release.xcconfig */,
+				E6962E332D27020FEDB4C0E8 /* Pods-onlycoffeeTests.debug.xcconfig */,
+				BC908E4AD9AB1B5324E30450 /* Pods-onlycoffeeTests.release.xcconfig */,
+				E7447A2E8C6C81028E3DB990 /* Pods-onlycoffeeUITests.debug.xcconfig */,
+				04B59E7F87B14C043F1A16AE /* Pods-onlycoffeeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D4416504D04E51BC7BC526D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				337C78BDAC4B79E1D877A414 /* Pods_onlycoffee.framework */,
+				43AC35EE4F68236F1E0BE5EB /* Pods_onlycoffeeTests.framework */,
+				D920E0B840C21FD19851501C /* Pods_onlycoffeeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26839A93225225A2002F8040 /* onlycoffee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26839ABF225225A9002F8040 /* Build configuration list for PBXNativeTarget "onlycoffee" */;
+			buildPhases = (
+				556A2F7879D98E9CA74D94EA /* [CP] Check Pods Manifest.lock */,
+				26839A90225225A2002F8040 /* Sources */,
+				26839A91225225A2002F8040 /* Frameworks */,
+				26839A92225225A2002F8040 /* Resources */,
+				B48DB8F6F540B5C02B76CD2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onlycoffee;
+			productName = onlycoffee;
+			productReference = 26839A94225225A2002F8040 /* onlycoffee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26839AAA225225A9002F8040 /* onlycoffeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26839AC2225225A9002F8040 /* Build configuration list for PBXNativeTarget "onlycoffeeTests" */;
+			buildPhases = (
+				C854466DEC7996F518DB180B /* [CP] Check Pods Manifest.lock */,
+				26839AA7225225A9002F8040 /* Sources */,
+				26839AA8225225A9002F8040 /* Frameworks */,
+				26839AA9225225A9002F8040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26839AAD225225A9002F8040 /* PBXTargetDependency */,
+			);
+			name = onlycoffeeTests;
+			productName = onlycoffeeTests;
+			productReference = 26839AAB225225A9002F8040 /* onlycoffeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26839AB5225225A9002F8040 /* onlycoffeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26839AC5225225A9002F8040 /* Build configuration list for PBXNativeTarget "onlycoffeeUITests" */;
+			buildPhases = (
+				44715ED60F574C3FC3CE4437 /* [CP] Check Pods Manifest.lock */,
+				26839AB2225225A9002F8040 /* Sources */,
+				26839AB3225225A9002F8040 /* Frameworks */,
+				26839AB4225225A9002F8040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26839AB8225225A9002F8040 /* PBXTargetDependency */,
+			);
+			name = onlycoffeeUITests;
+			productName = onlycoffeeUITests;
+			productReference = 26839AB6225225A9002F8040 /* onlycoffeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26839A8C225225A2002F8040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ryohei;
+				TargetAttributes = {
+					26839A93225225A2002F8040 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					26839AAA225225A9002F8040 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 26839A93225225A2002F8040;
+					};
+					26839AB5225225A9002F8040 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 26839A93225225A2002F8040;
+					};
+				};
+			};
+			buildConfigurationList = 26839A8F225225A2002F8040 /* Build configuration list for PBXProject "onlycoffee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26839A8B225225A2002F8040;
+			productRefGroup = 26839A95225225A2002F8040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26839A93225225A2002F8040 /* onlycoffee */,
+				26839AAA225225A9002F8040 /* onlycoffeeTests */,
+				26839AB5225225A9002F8040 /* onlycoffeeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26839A92225225A2002F8040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26839AF4225476E7002F8040 /* CoffeeInfoTableViewCell.xib in Resources */,
+				26839B1A2254A8DE002F8040 /* nolike.png in Resources */,
+				26839AE422546CD9002F8040 /* person_1.jpg in Resources */,
+				26839AA5225225A8002F8040 /* LaunchScreen.storyboard in Resources */,
+				26839AFC22547747002F8040 /* RatingTableViewCell.xib in Resources */,
+				26F3CF2A2254FFEB00DCFCCF /* CommentFieldTableViewCell.xib in Resources */,
+				26839ADE225465B1002F8040 /* FeedTableViewCell.xib in Resources */,
+				26839B14225497DC002F8040 /* coffee_3.jpg in Resources */,
+				0FAFB6EC2255E54C003ED3A2 /* menu.png in Resources */,
+				26839AF0225476D5002F8040 /* CoffeeImageTableViewCell.xib in Resources */,
+				26839B0C225487B9002F8040 /* CategoryCollectionViewCell.xib in Resources */,
+				26839AA2225225A8002F8040 /* Assets.xcassets in Resources */,
+				26839B1622549801002F8040 /* coffee_4.jpg in Resources */,
+				26839B1222548C7B002F8040 /* coffee_2.jpg in Resources */,
+				26839B182254A82D002F8040 /* star.png in Resources */,
+				26839ADA2254648C002F8040 /* GoogleService-Info.plist in Resources */,
+				26839B1E2254C3C7002F8040 /* ProfileCollectionViewCell.xib in Resources */,
+				26839B1022548BC3002F8040 /* SearchResultsCollectionViewCell.xib in Resources */,
+				26839AFE22547A9A002F8040 /* like.png in Resources */,
+				26839A9D225225A2002F8040 /* Main.storyboard in Resources */,
+				26839AE022546AD5002F8040 /* coffee_1.jpg in Resources */,
+				26839AF82254773D002F8040 /* CommentTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26839AA9225225A9002F8040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26839AB4225225A9002F8040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44715ED60F574C3FC3CE4437 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onlycoffeeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		556A2F7879D98E9CA74D94EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onlycoffee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B48DB8F6F540B5C02B76CD2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-onlycoffee/Pods-onlycoffee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-onlycoffee/Pods-onlycoffee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C854466DEC7996F518DB180B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onlycoffeeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26839A90225225A2002F8040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26839A9A225225A2002F8040 /* MainViewController.swift in Sources */,
+				26839B082254823A002F8040 /* SearchResultViewController.swift in Sources */,
+				26839AE222546BDA002F8040 /* ShadowButton.swift in Sources */,
+				26839AE8225472CE002F8040 /* ReviewViewController.swift in Sources */,
+				26839AD822527F06002F8040 /* Profile.swift in Sources */,
+				26839AD422527DE2002F8040 /* AuthManager.swift in Sources */,
+				26839B02225481EE002F8040 /* PhotoSelectViewController.swift in Sources */,
+				26839AE622546D16002F8040 /* Extension.swift in Sources */,
+				26F3CF262254DE7D00DCFCCF /* YPPicker.swift in Sources */,
+				26839B0B225487B9002F8040 /* CategoryCollectionViewCell.swift in Sources */,
+				26839AA0225225A2002F8040 /* onlycoffee.xcdatamodeld in Sources */,
+				26839B1D2254C3C7002F8040 /* ProfileCollectionViewCell.swift in Sources */,
+				26839B00225481D7002F8040 /* ProfileViewController.swift in Sources */,
+				0F877766225B505E00BAF598 /* SecurityAPI.swift in Sources */,
+				0F877768225B507700BAF598 /* TESTAPI.swift in Sources */,
+				26839AF72254773D002F8040 /* CommentTableViewCell.swift in Sources */,
+				26F3CF292254FFEB00DCFCCF /* CommentFieldTableViewCell.swift in Sources */,
+				26839A98225225A2002F8040 /* AppDelegate.swift in Sources */,
+				26839B0422548205002F8040 /* PostReviewViewController.swift in Sources */,
+				26839B0622548217002F8040 /* CategorySearchViewController.swift in Sources */,
+				26839ACF22527D10002F8040 /* constant.swift in Sources */,
+				0FB96FC3225732DC00F4C6E2 /* i.swift in Sources */,
+				26839AD622527EC4002F8040 /* CoffeePost.swift in Sources */,
+				0F877764225B503600BAF598 /* PageTable.swift in Sources */,
+				0FAFB6F02255ECC3003ED3A2 /* RelationshipViewController.swift in Sources */,
+				26839ADD225465B1002F8040 /* FeedTableViewCell.swift in Sources */,
+				26400AB3225A43C100F9EF59 /* DB.swift in Sources */,
+				0FB96FC5225AEA2D00F4C6E2 /* Alert.swift in Sources */,
+				26839AFB22547747002F8040 /* RatingTableViewCell.swift in Sources */,
+				0F87776A225B5B5F00BAF598 /* PageCollection.swift in Sources */,
+				26839B0F22548BC3002F8040 /* SearchResultsCollectionViewCell.swift in Sources */,
+				26839AEF225476D5002F8040 /* CoffeeImageTableViewCell.swift in Sources */,
+				26839AD122527DA5002F8040 /* CoffeeAPI.swift in Sources */,
+				26839AF3225476E7002F8040 /* CoffeeInfoTableViewCell.swift in Sources */,
+				0FAFB6EE2255E5A8003ED3A2 /* EditProfileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26839AA7225225A9002F8040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26839AB0225225A9002F8040 /* onlycoffeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26839AB2225225A9002F8040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26839ABB225225A9002F8040 /* onlycoffeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26839AAD225225A9002F8040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26839A93225225A2002F8040 /* onlycoffee */;
+			targetProxy = 26839AAC225225A9002F8040 /* PBXContainerItemProxy */;
+		};
+		26839AB8225225A9002F8040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26839A93225225A2002F8040 /* onlycoffee */;
+			targetProxy = 26839AB7225225A9002F8040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26839A9B225225A2002F8040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26839A9C225225A2002F8040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26839AA3225225A8002F8040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26839AA4225225A8002F8040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26839ABD225225A9002F8040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26839ABE225225A9002F8040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26839AC0225225A9002F8040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E45617FE2B5A3D4AD6414F /* Pods-onlycoffee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9VH3NDHUF;
+				INFOPLIST_FILE = onlycoffee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryohei.onlycoffee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		26839AC1225225A9002F8040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A2BCDD45539A84D0C53639 /* Pods-onlycoffee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9VH3NDHUF;
+				INFOPLIST_FILE = onlycoffee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryohei.onlycoffee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		26839AC3225225A9002F8040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6962E332D27020FEDB4C0E8 /* Pods-onlycoffeeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9VH3NDHUF;
+				INFOPLIST_FILE = onlycoffeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryohei.onlycoffeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onlycoffee.app/onlycoffee";
+			};
+			name = Debug;
+		};
+		26839AC4225225A9002F8040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC908E4AD9AB1B5324E30450 /* Pods-onlycoffeeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9VH3NDHUF;
+				INFOPLIST_FILE = onlycoffeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryohei.onlycoffeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onlycoffee.app/onlycoffee";
+			};
+			name = Release;
+		};
+		26839AC6225225A9002F8040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7447A2E8C6C81028E3DB990 /* Pods-onlycoffeeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9VH3NDHUF;
+				INFOPLIST_FILE = onlycoffeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryohei.onlycoffeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onlycoffee;
+			};
+			name = Debug;
+		};
+		26839AC7225225A9002F8040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B59E7F87B14C043F1A16AE /* Pods-onlycoffeeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9VH3NDHUF;
+				INFOPLIST_FILE = onlycoffeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryohei.onlycoffeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onlycoffee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26839A8F225225A2002F8040 /* Build configuration list for PBXProject "onlycoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26839ABD225225A9002F8040 /* Debug */,
+				26839ABE225225A9002F8040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26839ABF225225A9002F8040 /* Build configuration list for PBXNativeTarget "onlycoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26839AC0225225A9002F8040 /* Debug */,
+				26839AC1225225A9002F8040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26839AC2225225A9002F8040 /* Build configuration list for PBXNativeTarget "onlycoffeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26839AC3225225A9002F8040 /* Debug */,
+				26839AC4225225A9002F8040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26839AC5225225A9002F8040 /* Build configuration list for PBXNativeTarget "onlycoffeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26839AC6225225A9002F8040 /* Debug */,
+				26839AC7225225A9002F8040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		26839A9E225225A2002F8040 /* onlycoffee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				26839A9F225225A2002F8040 /* onlycoffee.xcdatamodel */,
+			);
+			currentVersion = 26839A9F225225A2002F8040 /* onlycoffee.xcdatamodel */;
+			path = onlycoffee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 26839A8C225225A2002F8040 /* Project object */;
+}

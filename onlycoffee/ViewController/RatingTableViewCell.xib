@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RatingTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="RatingTableViewCell" customModule="onlycoffee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWg-GL-bop" customClass="CosmosView" customModule="onlycoffee">
+                        <rect key="frame" x="10" y="10" width="300" height="69"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sy6-XX-3WY">
+                                <rect key="frame" x="95" y="17" width="37" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="69" id="e1n-ew-tjB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.025739787011173187" green="0.020199446360796187" blue="0.017093832720159234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="45"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textSize">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spd-mq-eAF">
+                        <rect key="frame" x="96" y="103" width="128" height="36.5"/>
+                        <color key="backgroundColor" red="0.18443123735970879" green="0.69834059565377826" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36.5" id="SbX-Ee-L0K"/>
+                        </constraints>
+                        <state key="normal" title="評価">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="rateButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7TF-nr-82t"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="232人が評価しました。参考になったら評価しよう" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tq-aA-UMk">
+                        <rect key="frame" x="0.0" y="84" width="320" height="9"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="8"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Tq-aA-UMk" firstAttribute="top" secondItem="kWg-GL-bop" secondAttribute="bottom" constant="5" id="Hv7-fV-w4t"/>
+                    <constraint firstAttribute="trailing" secondItem="kWg-GL-bop" secondAttribute="trailing" constant="10" id="UF7-5m-P1g"/>
+                    <constraint firstItem="kWg-GL-bop" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Uhs-tT-GXN"/>
+                    <constraint firstItem="7Tq-aA-UMk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="XFD-Q4-JM5"/>
+                    <constraint firstItem="Spd-mq-eAF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="YHX-4h-9cp"/>
+                    <constraint firstItem="7Tq-aA-UMk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dCt-Mp-ZSj"/>
+                    <constraint firstItem="kWg-GL-bop" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gjd-jP-ez7"/>
+                    <constraint firstItem="Spd-mq-eAF" firstAttribute="top" secondItem="7Tq-aA-UMk" secondAttribute="bottom" constant="10" id="noo-dE-xBk"/>
+                    <constraint firstItem="Spd-mq-eAF" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="w4U-m9-zVD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="rateButton" destination="Spd-mq-eAF" id="wXA-4t-Ctf"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="96.251874062968525"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.png" width="512" height="512"/>
+    </resources>
+</document>
